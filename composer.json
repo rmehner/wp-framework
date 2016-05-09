@@ -1,0 +1,19 @@
+{
+    "name": "bleech/wp-framework",
+    "description": "A moular wordpress framework",
+    "authors": [
+        {
+            "name": "bleech",
+            "email": "hello@bleech.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Bleech\\": "src/"
+        }
+    }
+}
