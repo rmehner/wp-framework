@@ -30,9 +30,13 @@ function remove_post_prefix_from_keys(array $arr) {
   return $newArray;
 }
 
-function get_echo_function($func_name) {
+function get_echo_function($func_name, $args = null) {
   ob_start();
-  $func_name();
+  if(isset($args)) {
+    $func_name($args);
+  } else {
+    $func_name();
+  }
   $output = ob_get_contents();
   ob_get_clean();
   return $output;
