@@ -70,10 +70,7 @@ function toCssClass($string) {
 
 
 function strstartswith($haystack, $needle) {
-  if  (strpos($haystack,$needle)===0)
-    return true;
-  else
-    return false;
+  return strpos($haystack, $needle) === 0;
 }
 
 function objectToArray($obj) {
