@@ -70,6 +70,7 @@ function toCssClass($string) {
 
 
 function strstartswith($haystack, $needle) {
+  if (!$needle) return false;
   return strpos($haystack, $needle) === 0;
 }
 
